@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    text-align: center;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    border-top: solid #443131;
+    border-bottom: 9px double #443131;
+    padding: 5px 0 10px;
+}
+
+header nav ul li{
+    margin: 0 25px;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* 下線を消す */
+    color: rgb(28, 15, 15);
+}
+
+header nav ul li a:hover{
+    text-decoration: underline solid;
+}
+
+body {
+    background-color: rgb(223, 216, 213);
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h2:first-of-type{
+    margin-top: 0;
+}
+
+h2{
+    border-bottom: 7px double #ffff;
+    width: 100px;
+    margin-top: 60px;
+}
+    
+.profile-image{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-container {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* 写真と文章の縦の真ん中を揃える */
+}
+
+.icon-images{
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+    background-color: #ffffff74; 
+    padding: 9px
+}
+
+.icon-images img{
+    width: 70px;
+    height: 70px;
+}
+
+.icon-images figcaption{
+    font-size: 8px;
+}
+
+.hobby-images{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;   
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hobby-slideshow{
+    position: relative;
+    max-width: 500px;
+    height: 333px; 
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #222; /* 画像読み込み中の隙間から見える背景を黒っぽくする */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.hobby-images:hover {
+    opacity: 0.9;
+}
+
+.hobby-images.active {
+    opacity: 1;
+}
+
+footer{
+    background-color: rgba(63, 29, 35, 0.532);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 8px;
+    margin-top: 20px;
+}
