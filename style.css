@@ -95,7 +95,7 @@ h2{
 .hobby-slideshow{
     position: relative;
     max-width: 500px;
-    height: 325px; 
+    height: 333px; 
     overflow: hidden;
     border-radius: 8px;
     background-color: #222; /* 画像読み込み中の隙間から見える背景を黒っぽくする */
